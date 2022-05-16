@@ -29,7 +29,7 @@ h1 {
 .slider-wrapper {
     overflow: hidden;
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     margin: 0 auto;
 }
 
@@ -72,7 +72,7 @@ h1 {
     width: 70%;
 }
 
-.text{
+.text {
     width: 100%;
     min-width: 100%;
     max-width: 100%;
@@ -88,3 +88,76 @@ h1 {
     text-align: right;
 }
 
+input {
+    display: none;
+}
+
+.button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.changing {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.slide-1:checked
+    ~ .button-wrapper
+    .buttons
+    .button
+    .changing-1,
+.slide-2:checked
+    ~ .button-wrapper
+    .buttons
+    .button
+    .changing-2,
+.slide-3:checked
+    ~ .button-wrapper
+    .buttons
+    .button
+    .changing-3,
+.slide-4:checked
+    ~ .button-wrapper
+    .buttons
+    .button
+    .changing-4 {
+    background-color: black;
+}
+
+#slide-2:checked ~ .slider-wrapper .slides {
+    margin-top: -80vh;
+}
+
+#slide-3:checked ~ .slider-wrapper .slides {
+    margin-top: -160vh;
+}
+
+#slide-4:checked ~ .slider-wrapper .slides {
+    margin-top: -240vh;
+}
+
+
+
+
+#slide-2:checked ~ .button-wrapper .textarea .text-1 {
+    margin-left: -100%;
+}
+
+#slide-3:checked ~ .button-wrapper .textarea .text-1 {
+    margin-left: -200%;
+}
+
+#slide-4:checked ~ .button-wrapper .textarea .text-1 {
+    margin-left: -300%;
+}

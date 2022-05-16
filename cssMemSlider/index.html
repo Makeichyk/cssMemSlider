@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,7 @@
         <div class="wrapper">
             <h1>CSS MEM-Slider</h1>
             <div class="slider">
-                <input type="radio" name="button" id="slide-1" />
+                <input type="radio" name="button" id="slide-1" checked />
                 <input type="radio" name="button" id="slide-2" />
                 <input type="radio" name="button" id="slide-3" />
                 <input type="radio" name="button" id="slide-4" />
@@ -33,10 +33,22 @@
 
                 <div class="button-wrapper">
                     <div class="buttons">
-                        <label for="slide-1" class="button-1"></label>
-                        <label for="slide-2" class="button-2"></label>
-                        <label for="slide-3" class="button-3"></label>
-                        <label for="slide-4" class="button-4"></label>
+                        <label for="slide-1" class="button">
+                            <span class="changing changing-1"></span>
+                        </label>
+
+                        <label for="slide-2" class="button">
+                            <span class="changing changing-2"></span>
+                        </label>
+
+                        <label for="slide-3" class="button">
+                            <span class="changing changing-3"></span>
+                        </label>
+
+                        <label for="slide-4" class="button">
+                            <span class="changing changing-4"></span>
+                        </label>
+
                     </div>
 
                     <div class="textarea">
