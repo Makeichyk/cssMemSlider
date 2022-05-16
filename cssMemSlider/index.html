@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>CSS MEM-Slider</h1>
+            <div class="slider">
+                <input type="radio" name="button" id="slide-1" checked />
+                <input type="radio" name="button" id="slide-2" />
+                <input type="radio" name="button" id="slide-3" />
+                <input type="radio" name="button" id="slide-4" />
+
+                <div class="slider-wrapper">
+                    <div class="slides">
+                        <div class="slide slide-1"></div>
+                        <div class="slide slide-2"></div>
+                        <div class="slide slide-3"></div>
+                        <div class="slide slide-4"></div>
+                    </div>
+                </div>
+
+                <div class="button-wrapper">
+                    <div class="buttons">
+                        <label for="slide-1" class="button">
+                            <span class="changing changing-1"></span>
+                        </label>
+
+                        <label for="slide-2" class="button">
+                            <span class="changing changing-2"></span>
+                        </label>
+
+                        <label for="slide-3" class="button">
+                            <span class="changing changing-3"></span>
+                        </label>
+
+                        <label for="slide-4" class="button">
+                            <span class="changing changing-4"></span>
+                        </label>
+
+                    </div>
+
+                    <div class="textarea">
+                        <div class="text text-1">Почему у меня болит спина, так же я:</div>
+                        <div class="text text-2">Когда мою работу проверил student-1</div>
+                        <div class="text text-3">Программисты - тестер </div>
+                        <div class="text text-4">А ты ждал ещё мемов?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
