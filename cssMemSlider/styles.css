@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: linear-gradient(to right top, #44a08d, #093637);
+    background-image: linear-gradient(to right top, #DBE6F6, #C5796D);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -63,7 +63,8 @@ h1 {
 
 .button-wrapper {
     display: flex;
-    font-display: row-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .textarea {
@@ -145,4 +146,49 @@ input {
 
 #slide-4:checked ~ .button-wrapper .textarea .text-1 {
     margin-left: -300%;
+}
+
+@media (max-width: 768px) {
+    .button-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .buttons {
+        align-self: center;
+    }
+    .slider-wrapper {
+        height: 26vh;
+    }
+
+    #slide-2:checked ~ .slider-wrapper .slides {
+        margin-top: -26vh;
+    }
+
+    #slide-3:checked ~ .slider-wrapper .slides {
+        margin-top: -52vh;
+    }
+
+    #slide-4:checked ~ .slider-wrapper .slides {
+        margin-top: -78vh;
+    }
+
+    #slide-2:checked ~ .button-wrapper .textarea .text-1 {
+        margin-left: -100%;
+    }
+
+    #slide-3:checked ~ .button-wrapper .textarea .text-1 {
+        margin-left: -200%;
+    }
+
+    #slide-4:checked ~ .button-wrapper .textarea .text-1 {
+        margin-left: -300%;
+    }
+    .text {
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .textarea{
+        width: 100%;
+    }
 }
